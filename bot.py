@@ -63,7 +63,7 @@ async def on_message(message):
     channel_id = message.channel.id
     if channel_id not in chat_sessions:
       chat_sessions[channel_id] = ai_client.chats.create(
-          model='gemini-2.5-flash',
+          model='gemini-1.5-flash',
           config=types.GenerateContentConfig(
               system_instruction=(
                   'Your name is ThalaAI. You are a private Discord server'
